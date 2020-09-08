@@ -5,10 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using ProjectMVC.Models;
+using ProjectMVC.Models.ViewModels;
 
-namespace ProjectMVC.Controllers
+namespace ProjectMVC.Areas.Customer.Controllers
 {
+    //defining the area of this controller
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
