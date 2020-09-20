@@ -1,4 +1,4 @@
-﻿using ProjectMVC.DataAccess.Data;
+﻿ using ProjectMVC.DataAccess.Data;
 using ProjectMVC.DataAccess.Repository.IRepository;
 using System;
 using System.Collections.Generic;
@@ -25,7 +25,7 @@ namespace ProjectMVC.DataAccess.Repository
             _db.Dispose();
         }
 
-        public void save()
+        public void Save()
         {
             _db.SaveChanges();
         }
